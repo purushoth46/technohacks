@@ -1,0 +1,146 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;0,700;0,800;0,900;1,200;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --color:#484141ce;
+    --body:#4F200D;
+    --heading:#F6F1E9;
+    --btn:#FF8400;
+    --bg:#FFD93D;
+    --boxshadow: 0px 0px 105px -1px rgba(209,255,196,1);
+}
+.logo{
+    color:white;
+    font-weight: 900;
+    font-size:50px;
+    padding: 10px;
+    padding-left: 80px;
+}
+body{
+     width: 100vw;
+     height: 100vh;
+     background:linear-gradient(to right ,rgba(0, 0 ,0,0.7)100%,rgba(0,0,0,0.6)), url(../images/dandelion-445228_640.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgba(45, 23,10,0.2) ;
+
+}
+.nav-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.nav-item{
+    margin-right: 5rem;
+
+}
+.icon{
+    margin: 10px;
+    color:white;
+    font-size:30px;
+}
+.nav-item a{
+    text-decoration: none;
+    color:#F6F1E9;
+    font-size:33px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.nav-links li a:hover{
+    border-bottom: 1px solid var(--body);
+    border-radius: 10px;
+    padding: 10px;
+    transition: .7s;
+    transform: scale(1.1);
+    opacity: .9;
+    font-weight:bold;
+
+}
+/* countdown section================ */
+.home{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 4% 7% 0 0 ;
+    position: relative;
+}
+.home img{
+    position:absolute;
+    top: 50;
+    border-radius: 20px;
+    box-shadow: var(--boxshadow);
+    height: 500px;
+    margin-right:60%;
+    
+}
+
+.home h1{
+    text-transform: capitalize;
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
+    margin: 0 4% 4% 0;
+}
+.countdown{
+    margin: 0 10% 0 0;
+    display: flex;
+    justify-content: space-around;
+    background-color:  #2f2f2f;
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 20px;
+}
+.time{
+    margin: 10px;
+}
+.home h2{
+    font-weight: 500;
+    font-size: 35px;
+    color: #ecef21;
+    margin-right: 35%;
+    margin-bottom: 2%;
+
+}
+.time h1{
+    background-color: #F6F1E9;
+    padding: 30px;
+    color:rgba(237, 14, 14);
+    border-radius: 20px;
+    margin:20px 10px 50px 0px;
+    font-size: 50px;
+}
+small{
+    font-weight: 900;
+    font-size: 1.5em;
+    color: white;
+}
+.btn{
+    padding: 10px;
+    border-radius:10px;
+    margin-right: 25%;
+    margin-top:2%;
+    color: #bdbdbd;;
+    font-weight: bold;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.btn.btn:hover{
+    color: black;
+    background-color: #FF8400;
+    box-shadow: var(--boxshadow);
+    transition: 1.5s;
+    transform: scale(.9);
+
+}
